@@ -1,8 +1,8 @@
 <?php
 $server = "localhost";
-$username = "root";
-$pass = "";
-$db = "myapp";
+$username = "id2051005_qwerty";
+$pass = "qwerty";
+$db = "id2051005_bluejackbibliotheca";
 
 $connection = mysqli_connect($server, $username, $pass, $db);
 
