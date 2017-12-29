@@ -1,4 +1,5 @@
 <?php
+ header('Access-Control-Allow-Origin: *');
 $server = "sql12.freemysqlhosting.net";
 $username = "sql12213159";
 $pass = "x7jPSZYT2A";
