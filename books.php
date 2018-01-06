@@ -1,9 +1,9 @@
 <?php
  header('Access-Control-Allow-Origin: *');
-$server = "sql12.freemysqlhosting.net";
-$username = "sql12213159";
-$pass = "x7jPSZYT2A";
-$db = "sql12213159";
+$server = "den1.mysql3.gear.host";
+$username = "bluejack";
+$pass = "Fv5Hd907?_A4";
+$db = "bluejack";
 
 $connection = mysqli_connect($server, $username, $pass, $db);
 
@@ -12,9 +12,9 @@ if ($connection->connect_error) {
 } 
 if ($_REQUEST) {
 $search_query = $_REQUEST['q'];
-$query_result = $connection->query("SELECT * FROM book WHERE title LIKE '%$search_query%' ");
+$query_result = $connection->query("SELECT * FROM bluejack.books WHERE title LIKE '%$search_query%' ");
 }else{
-	$query_result = $connection->query("SELECT * FROM book");
+	$query_result = $connection->query("SELECT * FROM bluejack.books");
 }
 
 
