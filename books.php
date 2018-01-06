@@ -7,6 +7,9 @@ $db = "sql12213159";
 
 $connection = mysqli_connect($server, $username, $pass, $db);
 
+if ($connection->connect_error) {
+    die("Connection failed: " . $connection->connect_error);
+} 
 if ($_REQUEST) {
 $search_query = $_REQUEST['q'];
 $query_result = $connection->query("SELECT * FROM book WHERE title LIKE '%$search_query%' ");
